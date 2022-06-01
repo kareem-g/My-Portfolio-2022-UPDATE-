@@ -15,7 +15,7 @@ const Wrapper = () => {
               <span className="text-[#9DECF9] text-base">web developer</span>
             </div>
 
-            <div className="mt-6 text-[#A0AEC0] font-normal text-sm leading-relaxed flex flex-col space-y-4 tracking-normal ">
+            <div className="mt-6 text-[#A0AEC0] font-normal text-sm leading-relaxed flex flex-col space-y-4 tracking-normal">
             <span>
               Hey gang, my name's Kareem and since a young age  <br/>
               I've had an obsession for nearly anything tech-related.  <br/>
@@ -70,9 +70,56 @@ const Wrapper = () => {
         </ul>
       </nav>
 
-          <div class="h-screen p-10">
-              <h1 class="text-4xl text-[#FFF] font-black uppercase">What i Do.</h1>
+          <div class="h-screen p-4 mt-6 flex flex-row">
+
+          <div className="w-3/5 flex flex-col">
+              <h1 class="text-3xl text-[#FFF] font-black uppercase tracking-wide"><span className="text-4xl">W</span>hat i Do.</h1>
+                <span className="mt-10 text-[#A0AEC0] font-normal text-sm leading-relaxed tracking-normal">
+                    I'm a Front end Developer, I'm always up to learn new technologies <br />
+                    to improve myself and get more experience <br />
+                    for Extremely Fast, High-quality & Best performance Websites.
+                  </span>
+
+                  <span className="mt-10 text-[#A0AEC0] font-normal text-sm font-bold leading-relaxed tracking-normal ">
+                    Languages and Technologies that i use
+                  </span>
+
+                  <div className="mt-4 grid grid-cols-2 gap-4">
+                  <span>TS
+                      <span className="ml-2 text-white">
+                      TypeScript
+                      </span>
+                  </span>
+
+                  <span>TS
+                      <span className="ml-2 text-white">
+                      TypeScript
+                      </span>
+                  </span>
+
+                  <span>TS
+                      <span className="ml-2 text-white">
+                      TypeScript
+                      </span>
+                  </span>
+
+                  <span>TS
+                      <span className="ml-2 text-white">
+                      TypeScript
+                      </span>
+                  </span>
+
+
+                  </div>
+
           </div>
+
+          <div className="w-2/5 pl-6">
+          <img class="mx-auto rounded-full" src="https://picsum.photos/id/1/250/250" alt="screenshot"/>
+          </div>
+
+          </div>
+
 
           <div class="h-screen p-10">
               <h1 class="text-4xl text-[#FFF] font-black uppercase">What i Do.</h1>
