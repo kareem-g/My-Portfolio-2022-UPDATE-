@@ -25,7 +25,7 @@ const About = () => {
               for Extremely Fast, High-quality & Best performance Websites.
             </span>
           </Fade>
-          <span className="mt-10 text-[#A0AEC0] font-normal text-sm font-bold leading-relaxed tracking-normal ">
+          <span className="mt-10 text-[#A0AEC0] text-sm font-bold leading-relaxed tracking-normal ">
             Languages and Technologies that i use
           </span>
           <Fade right cascade>

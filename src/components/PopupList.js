@@ -40,7 +40,7 @@ const PopupList = () => {
       {showModal ? (
         <>
           <Fade right cascade>
-            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto overscroll-none fixed inset-0 z-50 outline-none focus:outline-none">
+            <div className="mb-24 md:justify-center items-center flex overflow-x-hidden overflow-y-auto overscroll-none fixed inset-0 z-50 outline-none focus:outline-none ">
               <div className="relative w-[27rem] my-6 mx-auto max-w-3xl">
                 {/*content*/}
                 <div className="rounded-lg relative flex flex-col w-full bg-[#2D3748] outline-none focus:outline-none">

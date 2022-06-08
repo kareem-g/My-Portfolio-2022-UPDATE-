@@ -36,6 +36,7 @@ const Contact = () => {
               <a
                 href="https://www.github.com/kareem-g"
                 target="_blank"
+                rel="noreferrer"
                 className="ml-2 hover:underline transition ease-in-out delay-150s"
               >
                 https://www.github.com/kareem-g
