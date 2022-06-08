@@ -1,14 +1,13 @@
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  mode: "jit",
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-       Poppins: ['Poppins', 'sans-serif'],
-       Roboto: ['Roboto', 'sans-serif'],
+        Poppins: ["Poppins", "sans-serif"],
+        Roboto: ["Roboto", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};
