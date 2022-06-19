@@ -8,7 +8,11 @@ import Fade from "react-reveal/Fade";
 const Contact = () => {
   return (
     <>
-      <div class="flex flex-col h-screen p-10 ">
+      <div
+        // className="flex flex-col h-screen p-10"
+        id="contact"
+        className="contact"
+      >
         <h3 className="text-[#A0AEC0] mb-8">Contact</h3>
         <h1 class="text-4xl text-[#FFF] font-black capitalize">
           Interested ? <br /> Lets Get In Touch !
@@ -25,11 +29,23 @@ const Contact = () => {
             </span>
             <span className="flex -lex-row pt-4">
               <IoLogoLinkedin color="#9DECF9" size="24px" />
-              <span className="ml-2">@kareemgameel</span>
+              <a
+                href="https://www.linkedin.com/in/kareemgameel/"
+                target="_blank"
+                rel="noreferrer"
+                className="ml-2 hover:underline transition ease-in-out delay-150s"
+              >
+                @kareemgameel
+              </a>
             </span>
             <span className="flex flex-row pt-4">
               <MdAlternateEmail color="#9DECF9" size="24px" />
-              <span className="ml-2">kareemgameel2051@gmail.com</span>
+              <a
+                href="mailto:kareemgameel2051@gmail"
+                className="ml-2 hover:underline transition ease-in-out delay-150s"
+              >
+                kareemgameel2051@gmail.com
+              </a>
             </span>
             <span className="flex flex-row pt-4">
               <IoLogoGithub color="#9DECF9" size="24px" />

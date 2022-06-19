@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import Fade from "react-reveal/Fade";
 import MenuItems from "./MenuItems";
 import { AiOutlineMenu } from "react-icons/ai";
+
+import { Link } from "react-scroll";
+
 const Navbar = () => {
   const [active, setActive] = useState(false);
 
@@ -28,37 +31,37 @@ const Navbar = () => {
   return (
     <>
       <Fade right cascade>
-        <div className="transition ease-in-out delay-150 absolute right-6 p-6 md:hidden top-4 scale-110 hover:scale-125 cursor-pointer">
+        <div className="transition ease-in-out delay-150 absolute right-6 p-8 lg:hidden top-4 scale-110 hover:scale-125 cursor-pointer">
           <AiOutlineMenu
             color="#9DECF9"
-            size="24px"
+            size="32px"
             onClick={showMenu}
-            className="scale-110 hover:scale-125"
+            className="scale-110 bg-transparent w-16 hover:scale-125"
           />
         </div>
       </Fade>
       <Fade top cascade>
         <nav
-          className={`md:transition ease-in-out delay-150 mt-16 ${
+          className={`lg:transition ease-in-out delay-150 mt-16 ${
             show &&
             "transition ease-in-out delay-150 p-6 sticky top-0 bg-[#121212]-75 left-0 w-full"
           }`}
         >
-          <ul className="hidden mr-8 text-[#A0AEC0] capitalize tracking-[.10rem] text-sm font-Poppin md:flex flex-row-reverse">
-            <li className="pr-6 hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
-              <a href="#about">about</a>
+          <ul className="hidden mr-8 text-[#A0AEC0] capitalize tracking-[.10rem] text-sm font-Poppin lg:flex flex-row-reverse">
+            <li className="pr-6 cursor-pointer hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
+              <Link to="certifications">Certifications</Link>
             </li>
 
-            <li className="pr-6 hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
-              <a href="#works">Works</a>
+            <li className="pr-6 cursor-pointer hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
+              <Link to="about">about</Link>
             </li>
 
-            <li className="pr-6 hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
-              <a href="#experiance">Experiance</a>
+            <li className="pr-6 cursor-pointer hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
+              <Link to="works">Works</Link>
             </li>
 
-            <li className="pr-6 hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
-              <a href="#contact">Contact</a>
+            <li className="pr-6 cursor-pointer hover:underline decoration-[#9DECF9] decoration-1 underline-offset-3 transition ease-in-out delay-150s hover:-translate-y-1 duration-300">
+              <Link to="contact">Contact</Link>
             </li>
           </ul>
         </nav>

@@ -5,22 +5,28 @@ import Fade from "react-reveal/Fade";
 const Certifications = (props) => {
   return (
     <>
-      <div class="h-screen p-10 pt-32 mt-[35rem]">
+      <div
+        // className="flex flex-col h-screen p-10 pt-32 mt-[35rem]"
+        id="certifications"
+        className="certifications"
+      >
         <h1 class="text-4xl text-[#FFF] font-black capitalize">
           Certifications
         </h1>
         <Fade bottom ccade>
-          <div className="flex flex-row">
+          <div
+            // className="flex flex-row"
+            className="certifications-items"
+          >
             <CourseCard
-              name="sssssssssssssss"
-              description="I've collaborated with Elao, a development agency, to design their
-          new website based on their upcoming brand new identity."
+              name="The Complete JavaScript"
+              description="The modern JavaScript course for everyone! Master JavaScript with projects, challenges and theory. Many courses in one!"
+              link="https://www.udemy.com/course/the-complete-javascript-course/"
             />
             <CourseCard
-              name="sssssssssssssss"
-              link="https://www.google.com"
-              description="I've collaborated with Elao, a development agency, to design their
-          new website based on their upcoming brand new identity."
+              name="Understanding TypeScript"
+              description="Don't limit the Usage of TypeScript to Angular! Learn the Basics, its Features, Workflows and how to use it!"
+              link="https://www.udemy.com/course/understanding-typescript/https://www.udemy.com/course/understanding-typescript/"
             />
           </div>
         </Fade>

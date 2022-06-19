@@ -8,7 +8,7 @@ const MenuItems = ({ showMenu, active }) => {
       <ul
         className={
           active
-            ? "flex flex-col items-center justify-center fixed inset-0 backdrop-blur-lg z-40 text-[#A0AEC0] bg-black/90 capitalize tracking-[.10rem] text-lg font-Poppin p-8 gap-8 md:hidden"
+            ? "flex flex-col items-center justify-center fixed inset-0 backdrop-blur-lg z-40 text-[#A0AEC0] bg-black/90 capitalize overflow-hidden tracking-[.10rem] text-lg font-Poppin p-8 gap-8  lg:hidden"
             : "hidden"
         }
       >

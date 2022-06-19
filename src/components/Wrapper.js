@@ -10,20 +10,18 @@ import Fade from "react-reveal/Fade";
 const Wrapper = () => {
   return (
     <>
-      <div class="flex">
+      <div className="max-w-full flex flex-wrap">
         <SideBar />
-        <main class="w-3/5">
+        <main className="flex-auto w-3/5">
           <Navbar />
           <About id="about" />
           <Fade bottom>
             <Works id="works" />
           </Fade>
           <Fade bottom>
-            <Certifications />
+            <Certifications id="certifications" />
           </Fade>
-          <Fade bottom>
-            <Contact />
-          </Fade>
+          <Contact />
         </main>
       </div>
     </>
@@ -31,23 +29,3 @@ const Wrapper = () => {
 };
 
 export default Wrapper;
-
-{
-  /*
-#9DECF9 - Sky Blue
-#A0AEC0 - Bright gray
-*/
-}
-
-{
-  /*  
-const [showModal, setShowModal] = useState(false);
-            
-            <button
-        className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-        type="button"
-        onClick={() => setShowModal(false)}>
-        Close
-        </button>
-         */
-}

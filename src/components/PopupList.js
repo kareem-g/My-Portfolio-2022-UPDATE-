@@ -33,7 +33,8 @@ const PopupList = () => {
           type="button"
           onClick={() => setShowModal(true)}
         >
-          See My Full Stack
+          {/* See My Full Stack */}
+          My Stack Array
         </button>
       </Fade>
 

@@ -12,7 +12,11 @@ import Fade from "react-reveal/Fade";
 const About = () => {
   return (
     <>
-      <div class="h-screen p-4 mt-6 flex flex-row">
+      <div
+        // className="flex flex-row h-screen p-4 mt-6"
+        id="about"
+        className="about"
+      >
         <div className="w-3/5 flex flex-col">
           <h1 class="text-3xl text-[#FFF] font-black uppercase tracking-wide">
             <span className="text-4xl">W</span>hat i Do.
@@ -63,7 +67,9 @@ const About = () => {
           <div className="w-2/5 pl-6">
             <img
               src={require("./images/kareem.png")}
-              class="mx-auto rounded-full"
+              alt="me"
+              // className="mx-auto rounded-full"
+              className="img"
             />
           </div>
         </Fade>

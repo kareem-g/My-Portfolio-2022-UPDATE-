@@ -23,6 +23,9 @@ module.exports = {
         Poppins: ["Poppins", "sans-serif"],
         Roboto: ["Roboto", "sans-serif"],
       },
+      backgroundImage: {
+        secunix: "url('/src/components/images/secunix.png')",
+      },
     },
   },
   plugins: [],

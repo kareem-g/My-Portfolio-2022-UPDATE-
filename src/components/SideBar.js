@@ -3,10 +3,11 @@ import Fade from "react-reveal/Fade";
 const SideBar = () => {
   return (
     <>
-      <aside class="w-2/5 sticky left-0 top-0 h-screen p-4">
-        <h1 class="text-white text-2xl border border-1 border-green w-14 h-14">
-          Logo
-        </h1>
+      <aside
+        // className="flex flex-col w-2/5 flex-auto min-w-[300px] self-start sticky left-0 top-0 h-screen p-4"
+        className="sidebar"
+      >
+        {/* <h1 class="text-white text-2xl">K</h1> */}
 
         <div className="m-6">
           <h3 className="font-extrabold text-[#A0AEC0] text-sm">

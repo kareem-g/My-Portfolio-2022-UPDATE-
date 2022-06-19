@@ -1,0 +1,132 @@
+/* replace tailwindcss custom styles for the Sidebar component and its children, adjusting wrapper into App.js file.
+make the rest of components responsive on all screens after fixing the major CSS issues :) */
+html {
+    scroll-behavior: smooth;
+}
+
+.sidebar {
+    display: flex; 
+    position: sticky; 
+    top: 0; 
+    left: 0; 
+    padding: 1rem; 
+    flex-direction: column; 
+    flex: 1 1 auto; 
+    align-self: flex-start; 
+    width: 40%; 
+    height: 100vh;   
+}
+
+.about {
+    display: flex; 
+    padding: 1rem; 
+    margin-top: 1.5rem; 
+    flex-direction: row; 
+    height: 100vh; 
+}
+
+.img {
+    margin: 0% auto;
+    border-radius: 100%;
+}
+
+.works {
+    display: flex; 
+    padding: 2.5rem; 
+    flex-direction: column; 
+    height: 100vh; 
+
+}
+
+.certifications {
+    display: flex; 
+    padding: 2.5rem; 
+    padding-top: 8rem; 
+    flex-direction: column; 
+    height: 100vh; 
+    margin-top: 35rem;
+}
+
+.certifications-items {
+    display: flex; 
+    flex-direction: row; 
+}
+
+.course-item {
+    display: flex; 
+    margin-top: 3rem; 
+    flex-direction: row; 
+    width: 36rem;
+    height: 14rem;
+}
+
+.contact {
+    display: flex; 
+    padding: 2.5rem; 
+    flex-direction: column; 
+    height: 100vh; 
+}
+
+@media only screen and (max-width: 992px) {
+    /* For mobile phones & medium screens : */
+    .sidebar {
+    position: relative; 
+    width: 100%;
+    height: auto;
+    flex-direction: column; 
+
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+        height: 100vh;   
+        flex-direction: column; 
+    }
+
+    .img {
+        display: none;
+    }
+
+    .works {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+        height: 100vh;   
+        flex-direction: column;
+    }
+
+    .certifications {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%; 
+        height: 100vh;   
+        flex-direction: column;
+    }
+    .certifications-items {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .course-item {
+        display: flex; 
+        margin-top: 7rem; 
+        flex-direction: column; 
+    }
+
+    .contact {
+        display: flex; 
+        padding: 2.5rem; 
+        flex-direction: column; 
+        height: 100vh; 
+        justify-content: center;
+        /* align-items: center; */
+    }
+  }
